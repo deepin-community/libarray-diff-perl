@@ -1,0 +1,29 @@
+Source: libarray-diff-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Peter Pentchev <roam@ringlet.net>,
+           Salvatore Bonaccorso <carnil@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 12),
+               libalgorithm-diff-perl,
+               libclass-accessor-perl,
+               libtest-pod-perl,
+               libtest-pod-coverage-perl
+Build-Depends-Indep: perl
+Standards-Version: 4.4.0
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libarray-diff-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libarray-diff-perl.git
+Homepage: https://metacpan.org/release/Array-Diff
+
+Package: libarray-diff-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libalgorithm-diff-perl,
+         libclass-accessor-perl
+Description: Perl module to find the differences between two arrays
+ The Array::Diff module compares two arrays and determines which elements
+ have been removed or added.  Its interface is straightforward, solving
+ a simple problem in a simple way; for those who need more features,
+ there is always the Array::Compare module.
